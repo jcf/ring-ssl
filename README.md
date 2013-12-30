@@ -1,12 +1,13 @@
 # ring-ssl
 
+[![Build
+Status](https://travis-ci.org/jcf/ring-ssl.png?branch=master)](https://travis-ci.org/jcf/ring-ssl)
+
 A Clojure library designed to redirect all requests to your Ring app to
-an https URL.
+an https URL, inspired by [Rack::SSL][].
 
 This library is useful when you don't have a webserver like Nginx
 in-front of your application, for example, when deploying to Heroku.
-
-Inspired by [Rack::SSL][].
 
 ## Installation
 
