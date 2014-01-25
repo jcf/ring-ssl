@@ -1,7 +1,7 @@
 # ring-ssl
 
 [![Build
-Status](https://travis-ci.org/jcf/ring-ssl.png?branch=master)](https://travis-ci.org/jcf/ring-ssl)
+Status](https://travis-ci.org/listora/ring-ssl.png?branch=master)](https://travis-ci.org/listora/ring-ssl)
 
 A Clojure library designed to redirect all requests to your Ring app to
 an https URL, inspired by [Rack::SSL][].
