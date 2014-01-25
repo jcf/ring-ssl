@@ -60,7 +60,7 @@ Add the middleware to your stack.
 
 ## License
 
-Copyright © 2013 James Conroy-Finn
+Copyright © 2013-2014 Listora
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
