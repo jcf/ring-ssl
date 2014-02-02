@@ -11,22 +11,7 @@ in-front of your application, for example, when deploying to Heroku.
 
 ## Installation
 
-Assuming you're using Leiningen, add the following dependency to your
-`project.clj` file.
-
-    [listora/ring-ssl "0.0.1"]
-
-An example project.clj might look like:
-
-``` clojure
-(defproject my-amazing-ring-app "1.2.3"
-  :description "Doing secret things perhaps on Heroku"
-  :url "https://fancy-ring-app.herokuapp.com"
-  :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.5.1"]
-                 [listora/ring-ssl "0.0.1"]])
-```
+![Leiningen version](https://clojars.org/listora/ring-ssl/latest-version.svg)
 
 ## Usage
 
