@@ -11,7 +11,7 @@ in-front of your application, for example, when deploying to Heroku.
 
 ## Installation
 
-![Leiningen version](https://clojars.org/listora/ring-ssl/latest-version.svg)
+[![Leiningen version](https://clojars.org/listora/ring-ssl/latest-version.svg)](https://clojars.org/listora/ring-ssl)
 
 ## Usage
 
