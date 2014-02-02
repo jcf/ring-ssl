@@ -14,7 +14,7 @@ in-front of your application, for example, when deploying to Heroku.
 Assuming you're using Leiningen, add the following dependency to your
 `project.clj` file.
 
-    [ring-ssl "0.0.1"]
+    [listora/ring-ssl "0.0.1"]
 
 An example project.clj might look like:
 
@@ -25,7 +25,7 @@ An example project.clj might look like:
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.5.1"]
-                 [ring-ssl "0.0.1"]])
+                 [listora/ring-ssl "0.0.1"]])
 ```
 
 ## Usage
