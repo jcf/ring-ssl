@@ -1,6 +1,6 @@
 (defproject listora/ring-ssl "0.1.0"
   :description "Force SSL in your Ring application"
-  :url "https://github.com/jcf/ring-ssl"
+  :url "https://github.com/listora/ring-ssl"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.5.1"]
