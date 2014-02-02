@@ -1,18 +1,11 @@
 (ns ring.middleware.ssl
   (:require [ring.util.response :as response]
+            [ring.util.ssl :as util]
             [ring.util.request :as request]))
 
 (defn- idempotent-request?
   [{:keys [request-method]}]
   (some #(= request-method %) [:get :head]))
-
-(defn- using-https?
-  "Checks if the \"x-forwarded-proto\" header in req is \"https\", or whether
-  the scheme in the URL of the req is :https."
-  [req]
-  (let [forwarded (get-in req [:headers "x-forwarded-proto"])]
-    (or (= forwarded "https")
-        (= (req :scheme) :https))))
 
 (defn- https-url
   "Extracts the URL from req, and converts it to an https URL."
@@ -32,7 +25,7 @@
              "Location" (https-url req)}})
 
 (defn- build-secure-handler [original-handler req]
-  (if (using-https? req) original-handler https-redirect))
+  (if (util/https? req) original-handler https-redirect))
 
 (defn wrap-ssl
   "Redirect all requests to https. Looks at the scheme of the request URI, or

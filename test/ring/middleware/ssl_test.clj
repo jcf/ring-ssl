@@ -2,6 +2,7 @@
   (:require [clojure.test :refer :all]
             [ring.mock.request :refer [request header]]
             [ring.util.response :refer [get-header]]
+            [ring.util.ssl :as util]
             [ring.middleware.ssl :refer :all]))
 
 (def ^:private default-response
@@ -28,7 +29,7 @@
 
   (testing "recognition of x-forwarded-proto"
     (let [response (handler (-> (request :get "http://example.com")
-                                (header "x-forwarded-proto" "https")))]
+                                (util/add-x-forwarded-proto-header)))]
       (is (= (:status response) 200))
       (is (nil? (get-header response "location")))))
 
@@ -39,6 +40,6 @@
 
   (testing "adding Strict-Transport-Security header to non-redirects"
     (let [response (handler (-> (request :get "/")
-                                (header "x-forwarded-proto" "https")))]
+                                (util/add-x-forwarded-proto-header)))]
       (is (= (get-header response "strict-transport-security")
              "max-age=31536000; includeSubdomains")))))
