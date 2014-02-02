@@ -1,4 +1,4 @@
-(defproject listora/ring-ssl "0.0.1"
+(defproject listora/ring-ssl "0.1.0"
   :description "Force SSL in your Ring application"
   :url "https://github.com/jcf/ring-ssl"
   :license {:name "Eclipse Public License"
