@@ -45,9 +45,8 @@ Add the middleware to your stack.
 
 ## License
 
-Copyright © 2013-2014 Listora
+Copyright © 2013-2014 James Conroy-Finn & contributors.
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Released under the MIT license.
 
 [Rack::SSL]: https://github.com/josh/rack-ssl
